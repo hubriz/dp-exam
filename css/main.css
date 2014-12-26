@@ -1,0 +1,555 @@
+
+
+/* -------------------------------------------------------------
+    PSD to HTML
+    ===================================================
+
+    Converted by ART DE GUZMAN
+    26 September 2013
+    @hubriz
+    
+-------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Walkway Expand Black';
+    src: url('../fonts/walkway_expand_black.eot');
+    src: url('../fonts/walkway_expand_black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/walkway_expand_black.woff') format('woff'),
+         url('../fonts/walkway_expand_black.ttf') format('truetype'),
+         url('../fonts/walkway_expand_black.svg#walkway_expand_blackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  background: #ebebeb;
+  background: -moz-linear-gradient(top,  #ebebeb 7%, #b7b7b7 17%, #ffffff 77%, #ebebeb 99%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(7%,#ebebeb), color-stop(17%,#b7b7b7), color-stop(77%,#ffffff), color-stop(99%,#ebebeb));
+  background: -webkit-linear-gradient(top,  #ebebeb 7%,#b7b7b7 17%,#ffffff 77%,#ebebeb 99%);
+  background: -o-linear-gradient(top,  #ebebeb 7%,#b7b7b7 17%,#ffffff 77%,#ebebeb 99%);
+  background: -ms-linear-gradient(top,  #ebebeb 7%,#b7b7b7 17%,#ffffff 77%,#ebebeb 99%);
+  background: linear-gradient(to bottom,  #ebebeb 7%,#b7b7b7 17%,#ffffff 77%,#ebebeb 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ebebeb',GradientType=0 );
+}
+
+body {
+  background: transparent;
+  padding-top: 10px;
+  padding-bottom: 26px;
+}
+
+a, img {
+  outline: none;
+}
+
+
+/*Header Section*/
+#header-section {
+  margin-bottom: 20px;
+}
+#header-section h1 {
+  margin-bottom: 0;
+}
+#header-section h1 a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #201d1e;
+  /*font-size: 2.6em;*/
+  font-family: 'Walkway Expand Black', 'Myriad Pro', arial, sans-serif;
+  letter-spacing: 2px;
+  outline: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
+}
+#header-section h1 a span {
+  color: #ed1c24;
+}
+
+#header-section div:first-child p {
+  text-transform: uppercase;
+  font-family: 'Walkway Expand Black', 'Myriad Pro', arial, sans-serif;
+  color: #5d5c5c;
+  letter-spacing: 5px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.2);
+}
+
+#header-section div:first-child + div{
+  font-family: 'Questrial', 'Myriad Pro', arial, sans-serif;
+  color: #585858;
+}
+
+#header-section div:first-child + div ul > li {
+  min-width: 200px;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+#header-section div:first-child + div ul > li:first-child p {
+  text-transform: uppercase;
+}
+
+#header-section div:first-child + div p {
+  margin-bottom: 0;
+  font-size: 80%;
+}
+
+/*Home Navigation*/
+#site-navigation div.navbar-default{
+  background: #eeeeee;
+  background: -moz-linear-gradient(top,  #eeeeee 0%, #fafafa 9%, #dfdfdf 54%, #cecece 55%, #adadad 91%, #868686 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(9%,#fafafa), color-stop(54%,#dfdfdf), color-stop(55%,#cecece), color-stop(91%,#adadad), color-stop(100%,#868686));
+  background: -webkit-linear-gradient(top,  #eeeeee 0%,#fafafa 9%,#dfdfdf 54%,#cecece 55%,#adadad 91%,#868686 100%);
+  background: -o-linear-gradient(top,  #eeeeee 0%,#fafafa 9%,#dfdfdf 54%,#cecece 55%,#adadad 91%,#868686 100%);
+  background: -ms-linear-gradient(top,  #eeeeee 0%,#fafafa 9%,#dfdfdf 54%,#cecece 55%,#adadad 91%,#868686 100%);
+  background: linear-gradient(to bottom,  #eeeeee 0%,#fafafa 9%,#dfdfdf 54%,#cecece 55%,#adadad 91%,#868686 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#868686',GradientType=0 );
+  border: none;
+}
+#site-navigation div.home-menu ul.nav li.dropdown:hover ul.dropdown-menu{
+  background-color: #ececec;
+}
+#site-navigation div.home-menu ul.nav li > a {
+  color: #4f382a;
+  font-family: 'Questrial', 'Myriad Pro', arial, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px #dad9ac;
+  outline: none;
+}
+#site-navigation div.home-menu ul.nav li.dropdown ul.dropdown-menu li a{
+  text-transform:none;
+  color: #585858;
+  text-shadow: none;
+  outline: none;
+}
+#site-navigation div.home-menu ul.nav li.dropdown ul.dropdown-menu li a:hover{
+  background-color: #bab983;
+  color: white;
+}
+
+
+/*Carousel Home*/
+#carousel-home {
+  height: 100%;
+  border: 25px solid rgba(255,255,255,.7);
+  -moz-box-shadow: -10px -2px 15px rgba(0,0,0,.4), 10px 5px 15px rgba(0,0,0,.7);
+  -webkit-box-shadow: -10px -2px 15px rgba(0,0,0,.4), 10px 5px 15px rgba(0,0,0,.7);
+  -o-box-shadow: -10px -2px 15px rgba(0,0,0,.4), 10px 5px 15px rgba(0,0,0,.7);
+  box-shadow: -10px -2px 15px rgba(0,0,0,.4), 10px 5px 15px rgba(0,0,0,.7);
+  margin-bottom: 20px;
+}
+
+#carousel-home .flexslider {
+  border: none;
+  margin-bottom: 0;
+}
+#carousel-home .flexslider .flex-control-nav.flex-control-paging {
+  display: none;
+}
+
+#carousel-home .flexslider .flex-direction-nav a {
+  height: 45px;
+}
+
+#carousel-home .flexslider p {
+  position: absolute;
+  right: 8%;
+  bottom: 6%;
+  color: white;
+  font-family: 'Walkway Expand Black', 'Myriad Pro', arial, sans-serif;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.4);
+}
+
+/*Other Section*/
+#home-other-section label {
+  color: #2f2f2f;
+  font-family: arial,sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+/*First Content = QUICK SEARCH*/
+
+#home-other-section > div:first-child {
+  border: 1px solid #959554;
+}
+
+/*Quick Search*/
+#home-other-section > div:first-child h3 {
+  background: #939251;
+  background: -moz-linear-gradient(left,  #939251 0%, #c7c797 50%, #939251 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#939251), color-stop(50%,#c7c797), color-stop(100%,#939251));
+  background: -webkit-linear-gradient(left,  #939251 0%,#c7c797 50%,#939251 100%);
+  background: -o-linear-gradient(left,  #939251 0%,#c7c797 50%,#939251 100%);
+  background: -ms-linear-gradient(left,  #939251 0%,#c7c797 50%,#939251 100%);
+  background: linear-gradient(to right,  #939251 0%,#c7c797 50%,#939251 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939251', endColorstr='#939251',GradientType=1 );
+  padding: 10px 12px;
+  color: white;
+  font-family: arial, sans-serif;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.3);
+  text-transform: uppercase;
+  margin-top: 0;
+}
+/*Advanced Search*/
+#home-other-section > div:first-child h3 span a {
+  color: white;
+  text-decoration: underline;
+  text-transform:none;
+  text-shadow: none;
+  font-size: 0.5em;
+  font-family: arial, sans-serif;
+}
+#home-other-section > div:first-child h3 span a:hover {
+  color: #eee;
+}
+
+/*Try our Mobile Site Link*/
+#home-other-section > div:first-child form div.row:first-child + div + div h3{
+  margin-bottom: 0;
+  margin-top: 10px;
+  background: #4f382a;
+  background: -moz-linear-gradient(left,  #4f382a 0%, #9c6d4f 50%, #4f382a 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4f382a), color-stop(50%,#9c6d4f), color-stop(100%,#4f382a));
+  background: -webkit-linear-gradient(left,  #4f382a 0%,#9c6d4f 50%,#4f382a 100%);
+  background: -o-linear-gradient(left,  #4f382a 0%,#9c6d4f 50%,#4f382a 100%);
+  background: -ms-linear-gradient(left,  #4f382a 0%,#9c6d4f 50%,#4f382a 100%);
+  background: linear-gradient(to right,  #4f382a 0%,#9c6d4f 50%,#4f382a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f382a', endColorstr='#4f382a',GradientType=1 );
+}
+
+#home-other-section > div:first-child form div.row:first-child + div + div h3 a{
+  font-family: 'Questrial', 'Myriad Pro', arial, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+#home-other-section > div:first-child form div.row:first-child + div + div h3 a:hover {
+  color: #eee;
+}
+
+#home-other-section > div:first-child form div.row:first-child + div + div h3 a i.icon-rotate-90:before {
+  color: #333;
+  -moz-transform: rotate(162deg);
+  -webkit-transform: rotate(162deg);
+  -o-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+
+#home-other-section > div:first-child form div:first-child + div > div:first-child + div + div + div button {
+   background: #4f382a;
+   color: white;
+   text-transform: uppercase;
+   font-size: 88%;
+   border-radius: 0;
+}
+
+/*Second Content = 3 Buttons*/
+#home-other-section > div:first-child + div div.other-links  {
+   border: 1px solid #bbb9b9;
+   background: #dadada;
+   padding: 6px 7px;
+   margin-bottom: 12px;
+}
+#home-other-section > div:first-child + div div.other-links button {
+  width: 100%;
+  margin-bottom: 26px;
+  color: white;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  border-radius: 0;
+  background: #82803e;
+  background: -moz-linear-gradient(left,  #82803e 0%, #979555 50%, #7c7b39 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#82803e), color-stop(50%,#979555), color-stop(100%,#7c7b39));
+  background: -webkit-linear-gradient(left,  #82803e 0%,#979555 50%,#7c7b39 100%);
+  background: -o-linear-gradient(left,  #82803e 0%,#979555 50%,#7c7b39 100%);
+  background: -ms-linear-gradient(left,  #82803e 0%,#979555 50%,#7c7b39 100%);
+  background: linear-gradient(to right,  #82803e 0%,#979555 50%,#7c7b39 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82803e', endColorstr='#7c7b39',GradientType=1 );
+}
+
+#home-other-section > div:first-child + div div.other-links ul li:last-child button {
+  margin-bottom: 0;
+}
+
+#home-other-section > div:first-child + div .other-links li{
+  text-align: center;
+}
+
+.other-links li a {
+  text-decoration: none;
+}
+
+/*Third Content - Signup for Listings*/
+#home-other-section > div:first-child + div + div ul li:first-child {
+  margin-bottom: 12px;
+  background: #c7c7c7;
+ 
+}
+#home-other-section > div:first-child + div + div ul li:first-child a {
+  background:rgba(0,0,0,.4);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 100%;
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: #010101;
+}
+#home-other-section > div:first-child + div + div ul li:first-child a span {
+  background: url(../img/img-footer.png) no-repeat -318px 0px;
+  width: 63px;
+  height: 47px;
+  margin-right: 3em;
+  margin-left: 2em;
+}
+#home-other-section > div:first-child + div + div ul li:first-child a p {
+  color: #010101;
+  text-transform: uppercase;
+}
+#home-other-section > div:first-child + div + div ul li:first-child + li {
+  background: #939251;
+  background: -moz-linear-gradient(left,  #939251 0%, #c7c797 50%, #939251 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#939251), color-stop(50%,#c7c797), color-stop(100%,#939251));
+  background: -webkit-linear-gradient(left,  #939251 0%,#c7c797 50%,#939251 100%);
+  background: -o-linear-gradient(left,  #939251 0%,#c7c797 50%,#939251 100%);
+  background: -ms-linear-gradient(left,  #939251 0%,#c7c797 50%,#939251 100%);
+  background: linear-gradient(to right,  #939251 0%,#c7c797 50%,#939251 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939251', endColorstr='#939251',GradientType=1 );
+  padding: 10px 12px 18px;
+}
+#home-other-section > div:first-child + div + div ul li:first-child + li form h3 {
+  margin-top:0;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+  font-family: arial, sans-serif;
+  text-shadow: 0px 1px 1px rgba(0,0,0,.3);
+  text-transform: uppercase;
+}
+#home-other-section > div:first-child + div + div ul li:first-child + li form label {
+  color: white;
+  font-size: 0.9em;
+}
+#home-other-section > div:first-child + div + div ul li:first-child + li form button {
+  width: 100%;
+  background: #4f382a;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-family: arial, sans-serif;
+  font-size: 88%;
+  text-transform: uppercase;
+}
+
+/*Home Bottom*/
+#home-bottom {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  margin-top: 26px;
+  margin-bottom: 12px;
+}
+#home-bottom img {
+  margin-top: 5em;
+}
+#home-bottom article h3 {
+  color: #4f382a;
+  text-shadow: 0px 1px 0px #4f382a;
+  text-transform: uppercase;
+  font-family: 'Walkway Expand Black', 'Myriad Pro', arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+#home-bottom article p {
+  color: #585858;
+  font-family: arial, sans-serif;
+  line-height: 18px;
+}
+
+
+/*Footer Section*/
+#footer-section ul {
+  margin-bottom: 0;
+}
+#footer-section ul li:first-child {
+  border-left: none;
+}
+#footer-section ul li {
+  border-left: 1px solid #4c4c4c;
+  line-height: 10px;
+  padding-left: 8px;
+}
+#footer-section ul > li a,
+#footer-section p{
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 80%;
+  color: #4c4c4c;
+}
+#footer-section ul > li a {
+  background-image: url(../img/img-footer.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+
+#footer-section div > div:first-child div:first-child ul li,
+#footer-section div > div:first-child div:first-child + div ul li{
+  border-left: none;
+}
+/*MLS Icon*/
+#footer-section div > div:first-child div:first-child ul li:first-child a{
+  background-position: 0px -18px;
+  width: 55px;
+  height: 25px;
+}
+/*Equal Housing*/
+#footer-section div > div:first-child div:first-child ul li:first-child + li a{
+  background-position: -55px -18px;
+  width: 29px;
+  height: 25px;
+}
+/*Realtor Icon*/
+#footer-section div > div:first-child div:first-child ul li:first-child + li  + li a {
+  background-position: -84px -18px;
+  width: 24px;
+  height: 25px;
+}
+
+/*Century 21 Icon*/
+#footer-section div > div:first-child div:first-child + div ul li:first-child a{
+  background-position: -118px -13px;
+  width: 56px;
+  height: 34px;
+}
+/*YouTube Icon*/
+#footer-section div > div:first-child div:first-child + div ul li:first-child + li a{
+  background-position: -180px -13px;
+  width: 31px;
+  height: 28px;
+}
+/*Facebook Icon*/
+#footer-section div > div:first-child div:first-child + div ul li:first-child + li + li a{
+  background-position: -211px -13px;
+  width: 33px;
+  height: 28px;
+}
+/*LinkedIn*/
+#footer-section div > div:first-child div:first-child + div ul li:first-child + li + li + li a{
+  background-position: -244px -13px;
+  width: 35px;
+  height: 28px;
+}
+/*Twitter Icon*/
+#footer-section div > div:first-child div:first-child + div ul li:first-child + li + li + li + li a{
+  background-position: -279px -13px;
+  width: 37px;
+  height: 28px;
+}
+
+@media (max-width:750px){
+  #site-navigation div.home-menu ul.nav li > a {
+    text-align: center;
+    color: #585858;
+    text-shadow: none;
+  }
+  #site-navigation div.home-menu ul.nav li > a:hover {
+    background-color: #bab983;
+    color: white;    
+  }
+  #site-navigation div.navbar-default {
+    background: #eee;
+  }
+}
+
+@media (min-width: 751px) {
+  #site-navigation div.home-menu ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+  }
+}
+
+@media (min-width: 991px){
+  #site-navigation div.home-menu ul.nav > li a {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (max-width: 1180px){
+  #home-other-section > div:first-child form div:first-child + div + div select.form-control {
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+}
+
+/*Responsive Adjustment*/
+
+@media (min-width: 1200px){
+  #site-navigation div.home-menu ul.nav > li a {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #home-other-section > div:first-child select.form-control {
+    padding: 6px 2px;
+    width: auto;
+  }
+  #home-other-section > div:first-child form > div:first-child > div:first-child + div + div label {
+    margin-left: -10px;
+  }
+
+  #home-other-section > div:first-child form > div:first-child > div:first-child + div + div select.form-control {
+    margin-left: -10px;
+    padding: 6px 1px;
+  }
+  #home-other-section > div:first-child form div:first-child + div > div:first-child + div + div select.form-control {
+    margin-left: -20px;
+  }
+  #home-other-section > div:first-child form div:first-child + div > div:first-child + div + div + div button {
+    width: 100%;
+  }
+  #home-other-section > div:first-child div.row div.col-lg-5 p.pull-left {
+    margin-left: 1.6em;
+    margin-bottom: 0;
+    line-height: 2.4em;
+    font-size: 0.9em;
+  }
+}
+
+/*IE Hacks / NoJavascripts*/
+#ie-drop {
+  _margin-left: 30%;
+}
+#ie-drop div ul {margin: 2em 0;}
+
+#ie-drop div ul li {
+  margin: 0 0.4em;
+  _float:left;
+}
+
+#ie-drop div ul li a{
+  background-image: url(../img/browsers-280x56.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  font-size: 0;
+  overflow: hidden;
+}
+#ie-drop .ff-upgrade {background-position:0 0;width:55px;height:55px;}
+#ie-drop .chrome-upgrade {background-position: -57px -1px;width:54px;height:54px;}
+#ie-drop .safari-upgrade {background-position: -115px 0;width: 50px; height:55px;}
+#ie-drop .opera-upgrade {background-position: -171px -1px;width:49px;height:52px;}
+#ie-drop .ie-upgrade {background-position: -223px 0;width:57px;height:56px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
